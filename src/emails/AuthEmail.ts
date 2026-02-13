@@ -10,7 +10,7 @@ export class AuthEmail {
 
     static sendConfirmationEmail = async (user: IEmail) => {
         await transporter.sendMail({
-            from: 'Valkyrie <no-reply@valkyrie.com>',
+            from: 'Valkyrie <onboarding@resend.dev>',
             to: user.email,
             subject: 'Valkyrie - Confirm your account',
             text: 'Valkyrie - Confirm your account',
@@ -53,7 +53,7 @@ export class AuthEmail {
 
     static sendPasswordResetToken = async (user: IEmail) => {
         await transporter.sendMail({
-            from: 'Valkyrie <no-reply@valkyrie.com>',
+            from: 'Valkyrie <onboarding@resend.dev>',
             to: user.email,
             subject: 'Valkyrie - Reset your password',
             text: 'Valkyrie - Reset your password',
